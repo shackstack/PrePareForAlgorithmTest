@@ -15,4 +15,14 @@ const getMaxAndMin = (numbers) => {
   return `${min} ${max}`;
 };
 
+// 괜찮은 풀이
+function solution(s) {
+  var arr = s.split(" ");
+  arr.sort((a, b) => a - b);
+
+  var answer = arr[0] + " " + arr[arr.length - 1];
+
+  return answer;
+}
+
 console.log(getMaxAndMin("1 2 3 4"));
