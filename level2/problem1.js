@@ -15,7 +15,7 @@ const getMaxAndMin = (numbers) => {
   return `${min} ${max}`;
 };
 
-// 괜찮은 풀이
+// 참고할만한 풀이
 function solution(s) {
   var arr = s.split(" ");
   arr.sort((a, b) => a - b);
